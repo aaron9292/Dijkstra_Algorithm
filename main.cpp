@@ -25,22 +25,22 @@ void simpleGraph() {
     DijkstraAlgorithm algorithm(graph);
     algorithm.runAlgorithm(aVertex);
 
-    assert(algorithm.getShortestDistance(aVertex) == 0);
+    /*assert(algorithm.getShortestDistance(aVertex) == 0);
     assert(algorithm.getShortestDistance(bVertex) == 3);
-    assert(algorithm.getShortestDistance(cVertex) == 8);
+    assert(algorithm.getShortestDistance(cVertex) == 8);*/
 
-    assert(algorithm.getPathTo(aVertex) == "A");
+    /*assert(algorithm.getPathTo(aVertex) == "A");
     assert(algorithm.getPathTo(bVertex) == "A-B");
-    assert(algorithm.getPathTo(cVertex) == "A-B-C");
+    assert(algorithm.getPathTo(cVertex) == "A-B-C");*/
 
-    graph->clear();
+    /*graph->clear();
     delete graph;
 
     delete aVertex;
     delete bVertex;
     delete cVertex;
 
-    cout << "Simple graph test complete" << endl;
+    cout << "Simple graph test complete" << endl;*/
 }
 
 void fiveElementGraph() {
@@ -190,7 +190,7 @@ void canGoEverywhere() {
 }
 
 int main(int argc, char** argv) {
-    int testToRun = INT_MAX;
+    /*int testToRun = INT_MAX;
     if ( argc > 1) {
         testToRun = atoi(argv[1]);
     }
@@ -213,5 +213,10 @@ int main(int argc, char** argv) {
             fiveElementGraph();
             cantGoAnywhere();
             canGoEverywhere();
-    }
+    }*/
+
+    simpleGraph();
+    //fiveElementGraph();
+    //cantGoAnywhere();
+    //canGoEverywhere();
 }
