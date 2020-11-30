@@ -18,7 +18,7 @@ class DijkstraAlgorithm {
 public:
     DijkstraAlgorithm(Graph* g);
     void runAlgorithm(Vertex* vertex);
-    int getShortestDistance(Vertex* end);
+    int getShortestDistance(Vertex* vertex);
     string getPathTo(Vertex* end);
 private:
     Graph* graph;
