@@ -26,7 +26,7 @@ void DijkstraAlgorithm::runAlgorithm(Vertex* source){ //runs dijkstra algorithm
     }
 
     int shortest;
-    while(!vertices.empty()){
+    while(!vertices.empty()){ //finds the shortest distance of the vertex list
         shortest = INT_MAX;
         for(auto& x: distance){
             if(x.second < shortest){
@@ -37,7 +37,7 @@ void DijkstraAlgorithm::runAlgorithm(Vertex* source){ //runs dijkstra algorithm
         }
 
         Vertex* smallest;
-        for(auto& x: distance){
+        for(auto& x: distance){ //gets vertex with smallest distance
             if(x.second == shortest){
                 smallest = x.first;
                 vertices.erase(find(vertices.begin(), vertices.end(), x.first));
